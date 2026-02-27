@@ -1,0 +1,44 @@
+<footer class="footer sm:footer-horizontal bg-base-200 text-base-content p-10">
+  <aside>
+    <div class="text-4xl">🌍</div>
+    <p>
+      CountryApp
+      <br />
+      Explora el mundo a tu ritmo
+    </p>
+  </aside>
+
+  <nav>
+    <h6 class="footer-title">Buscar por</h6>
+    <a routerLink="/country/by-capital" class="link link-hover">Capital</a>
+    <a routerLink="/country/by-country" class="link link-hover">País</a>
+    <a routerLink="/country/by-region" class="link link-hover">Región</a>
+  </nav>
+
+  <nav>
+    <h6 class="footer-title">Regiones</h6>
+    <a routerLink="/country/by-region" [queryParams]="{region: 'Africa'}" class="link link-hover">África</a>
+    <a routerLink="/country/by-region" [queryParams]="{region: 'Americas'}" class="link link-hover">Américas</a>
+    <a routerLink="/country/by-region" [queryParams]="{region: 'Asia'}" class="link link-hover">Asia</a>
+    <a routerLink="/country/by-region" [queryParams]="{region: 'Europe'}" class="link link-hover">Europa</a>
+    <a routerLink="/country/by-region" [queryParams]="{region: 'Oceania'}" class="link link-hover">Oceanía</a>
+  </nav>
+
+  <nav>
+    <h6 class="footer-title">Proyecto</h6>
+    <a class="link link-hover">Hecho con Angular 19</a>
+    <a class="link link-hover">Tailwind + DaisyUI</a>
+    <a class="link link-hover">REST Countries API</a>
+  </nav>
+
+  <nav>
+    <h6 class="footer-title">Encuéntrame</h6>
+    <a href="https://www.linkedin.com/in/raul-sanchez-rivera/" target="_blank" class="link link-hover">LinkedIn</a>
+    <a href="https://github.com/RaulSanchez119" target="_blank" class="link link-hover">GitHub</a>
+  </nav>
+
+</footer>
+
+<div class="bg-base-300 text-base-content border-base-300 border-t px-10 py-4 flex justify-center">
+  <p>Proyecto de aprendizaje de Angular · Desarrollado por <span class="font-semibold text-primary">Raúl Sánchez</span></p>
+</div>

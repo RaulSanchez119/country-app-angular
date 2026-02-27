@@ -1,0 +1,47 @@
+<div class="flex flex-col items-center px-6 py-8 gap-8 max-w-5xl mx-auto">
+
+  <!-- Header -->
+  <section class="text-center">
+    <h1 class="text-5xl font-bold">{{ country().name }}</h1>
+    <p class="text-2xl font-thin text-gray-400 mt-2">Población: {{ country().population | number }}</p>
+  </section>
+
+  <!-- Stats -->
+  <section class="stats shadow w-full">
+    <div class="stat place-items-center">
+      <div class="stat-title text-lg">Población</div>
+      <div class="stat-value text-3xl">{{ country().population | number }}</div>
+      <div class="stat-desc text-base">Desde {{ currentYear() }}</div>
+    </div>
+
+    <div class="stat place-items-center">
+      <div class="stat-title text-lg">Nombre</div>
+      <div class="stat-value text-secondary text-3xl">{{ country().name }}</div>
+      <div class="stat-desc text-base text-secondary">{{ country().region }}</div>
+    </div>
+
+    <div class="stat place-items-center">
+      <div class="stat-title text-lg">Sub Región</div>
+      <div class="stat-value text-3xl">{{ country().subRegion }}</div>
+      <div class="stat-desc text-base">{{ country().region }}</div>
+    </div>
+
+    <div class="stat place-items-center">
+      <div class="stat-title text-lg">Bandera</div>
+      <div class="stat-value text-5xl">{{ country().flag }}</div>
+      <div class="stat-desc text-base">{{ country().subRegion }}</div>
+    </div>
+  </section>
+
+  <!-- Bandera -->
+  <section class="diff aspect-video w-full rounded-xl shadow-xl overflow-hidden">
+    <div class="diff-item-1" role="img">
+      <img [alt]="country().name" [src]="country().flagSvg" />
+    </div>
+    <div class="diff-item-2" role="img">
+      <img class="blur brightness-75" [alt]="country().name" [src]="country().flagSvg" />
+    </div>
+    <div class="diff-resizer"></div>
+  </section>
+
+</div>

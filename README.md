@@ -1,59 +1,63 @@
-# CountryApp
+# CountryApp 🌍
+Aplicación web para explorar información de países del mundo, construida con Angular y TailwindCSS, consumiendo la API de REST Countries. Permite buscar países por capital, nombre o región y ver información detallada de cada uno.
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.1.4.
+## 🚀 Tecnologías
+- Angular 19
+- Tailwind CSS
+- DaisyUI
+- REST Countries API
 
-## Development server
-
-To start a local development server, run:
-
+## ⚙️ Instalación
+1. Clonar el repositorio
 ```bash
-ng serve
+   git clone https://github.com/RaulSanchez119/country-app-angular
 ```
-
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
+2. Instalar dependencias
 ```bash
-ng generate component component-name
+   npm install
 ```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
+3. Iniciar el servidor
 ```bash
-ng generate --help
+   ng serve
 ```
+4. Abrir `http://localhost:4200/`
 
-## Building
 
-To build the project run:
+## ✨ Funcionalidades
+- 🏛️ Búsqueda de países por capital
+- 🌐 Búsqueda de países por nombre
+- 🗺️ Filtrado de países por región
+- 📄 Vista detallada de cada país con bandera, población, región y subregión
+- 💾 Caché de búsquedas para evitar peticiones repetidas
+- 🔗 Persistencia de búsqueda en la URL mediante query params
 
-```bash
-ng build
-```
+## 📚 Conceptos aplicados
+- `rxResource` y `resource` para manejo de estado asíncrono
+- `linkedSignal` y `signal` para reactividad
+- `debounceTime` con `effect` y `onCleanup` para búsquedas automáticas
+- Caché de resultados con `Map`
+- Persistencia de estado en URL con `ActivatedRoute` y `queryParams`
+- Manejo de excepciones con `catchError` y `throwError` en RxJS
+- Mapeo de datos con interfaces y mappers
+- `DecimalPipe` para formateo de números
+- Página 404 con navegación hacia atrás usando `Location`
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+## 📁 Estructura del proyecto
+src/
+├── app/
+│   ├── country/
+│   │   ├── components/      # country-list, search-input
+│   │   ├── interfaces/
+│   │   ├── layouts/
+│   │   ├── mappers/
+│   │   ├── pages/           # by-capital, by-country, by-region, country-by
+│   │   ├── services/
+│   │   └── country.routes.ts
+│   └── shared/
+│       ├── components/      # navbar, footer
+│       └── pages/           # home
+├── public/
+└── styles.css
 
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## 👤 Autor
+Raul Sanchez — [LinkedIn](https://www.linkedin.com/in/raul-sanchez119/)
