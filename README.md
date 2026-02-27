@@ -2,7 +2,7 @@
 Aplicación web para explorar información de países del mundo, construida con Angular y TailwindCSS, consumiendo la API de REST Countries. Permite buscar países por capital, nombre o región y ver información detallada de cada uno.
 
 ## 🚀 Tecnologías
-- Angular 19
+- Angular 21
 - Tailwind CSS
 - DaisyUI
 - REST Countries API
