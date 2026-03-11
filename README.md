@@ -60,4 +60,4 @@ src/
 └── styles.css
 
 ## 👤 Autor
-Raul Sanchez — [LinkedIn](https://www.linkedin.com/in/raul-sanchez119/)
+Raul Sanchez — [LinkedIn](https://www.linkedin.com/in/raul-sanchez-rivera/)
