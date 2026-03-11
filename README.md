@@ -43,6 +43,7 @@ Aplicación web para explorar información de países del mundo, construida con 
 - Página 404 con navegación hacia atrás usando `Location`
 
 ## 📁 Estructura del proyecto
+```
 src/
 ├── app/
 │   ├── country/
@@ -58,6 +59,7 @@ src/
 │       └── pages/           # home
 ├── public/
 └── styles.css
+```
 
 ## 👤 Autor
 Raul Sanchez — [LinkedIn](https://www.linkedin.com/in/raul-sanchez-rivera/)
